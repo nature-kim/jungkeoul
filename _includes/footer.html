@@ -2,15 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center">
-        <h4><strong>{{ site.owner }}</strong>
-        </h4>
+        <h3><strong>{{ site.owner }}</strong></h3>
         <p>
           {% for address in site.address %}
           {{ address.line }}<br>
           {% endfor %}
         </p>
         <ul class="list-unstyled">
-          <li><i class="fa fa-phone fa-fw"></i> {{ site.telephone }}</li>
+          <li><i class="fa fa-phone fa-fw"></i> <a href="tel:02-2168-2511">{{ site.telephone }}</a></li>
           
           <!--
           <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
@@ -18,6 +17,24 @@
           -->
         </ul>
         <br>
+
+        <p>
+        <strong>지하철</strong><br>5호선 오목교역 2번 출구 도보 10분
+        </p>
+        <p>
+        <br>
+        <strong>버스</strong>
+        <br>목동운동장남문, 목동파라곤/행복한세상 하차
+        <br>지선(초록) : 6624, 6627, 6637
+        <br>간선(파랑) : 571, 603
+        <br>좌석 : 700
+        </p>
+        <br>
+        <p>
+        <strong>주차</strong>
+        <br>현대 41타워 건물 내 지하 주차장 2시간 무료주차
+        <br>"접수대"에서 무료주차 확인증 꼭 받으시길 바랍니다.
+        </p>
         <!--
         <ul class="list-inline">
           <li>
@@ -33,6 +50,8 @@
         
         <hr class="small">
         -->
+        <br>
+        <br>
         <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
       </div>
     </div>

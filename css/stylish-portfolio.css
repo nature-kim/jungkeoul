@@ -220,6 +220,27 @@ hr.small {
     opacity: 0.8;
 }
 
+
+.img-portfolio-nonhover {
+    margin: 0 auto;
+/*
+    -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+*/
+      -webkit-user-select: none;  /* Chrome all / Safari all */
+      -moz-user-select: none;     /* Firefox all */
+      -ms-user-select: none;      /* IE 10+ */
+      -o-user-select: none;
+      user-select: none;
+}
+
+
+
 /* Call to Action */
 
 .call-to-action {
@@ -252,3 +273,7 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+
+
+
